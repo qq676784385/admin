@@ -1,0 +1,215 @@
+.newTemplate{
+	width: 99%;
+	height: 98%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: #fff;
+	overflow: auto;
+	z-index: 4;
+
+	.newTemplateCont{
+		width: 99%;
+		height: 98%;
+		background: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		border:1px solid #ddd;
+
+		.title{
+			font-size: 16px;
+			color: #4c5e70;
+			height: 50px;
+			line-height: 50px;
+			padding-left: 22px;
+			border-bottom: 1px solid #DAE1EB;
+			font-weight: bold;
+			.cancelBtn{
+				cursor: pointer;
+				position: absolute;
+				right: 20px;
+				font-size: 30px;
+			}
+		}
+		.tempCont{
+			display: inline-block;
+			position: absolute;
+			top: 58px;
+			left: 0px;
+			right: 0px;
+			bottom: 50px;
+			overflow: auto;
+			.partOne{
+				display: inline-block;
+				padding-bottom: 10px;
+				position: relative;
+				top: 0;
+				.name{
+					height: 35px;
+					line-height: 35px;
+					font-size: 14px;
+					color: #4C5E70;
+					font-weight: bold;
+					.simpleFont{
+						font-weight: normal;
+					}
+					.printBtn{
+						// padding: 2px;
+						position: absolute;
+				    right: 0px;
+				    top: 0px;
+						z-index: 2;
+
+						.b2{
+							height: 30px;
+							line-height: 30px;
+							width: 42px;
+							text-align: center;
+							display: inline-block;
+							color: #fff;
+							// padding: 5px 10px;
+							border-radius: 4px;
+							font-size: 14px;
+							cursor: pointer;
+						}
+						.b2:nth-child(1){
+							margin-right: 4px;
+						}
+					}
+				}
+				.cont{
+					height: 94%;
+					border:1px solid #ddd;
+					position: relative;
+					top: 0;
+
+					img{
+						max-height: 100%;
+						max-width: 100%;
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						right: 0px;
+						bottom: 0px;
+						margin: auto;
+					}
+					.fzline{
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						right: 0px;
+						bottom: 0px;
+
+					}
+					.base_title{
+						background: #ccc;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						font-size: 14px;
+						margin-bottom: 10px;
+						color: #4C5E70;
+						font-weight: bold;
+					}
+
+					.printInfo{
+
+					}
+				}
+
+			}
+			.part_left{
+				width: 464px;
+				position: absolute;
+				top: 0px;
+				left: 26px;
+				right: 0px;
+				bottom: 0px;
+				// background: red;
+			}
+			.part_middle{
+				margin-left: 31px;
+				margin-right: 31px;
+				width: 464px;
+				position: absolute;
+				top: 0px;
+				left: 464px+31px;
+				right: 0px;
+				bottom: 0px;
+				// background: green;
+
+			}
+			.part_right{
+				position: absolute;
+				top: 0px;
+				left: (464px+26px+31px+464px+31px);
+				right: 8px;
+				bottom: 0px;
+
+				.cont{
+					position: relative;
+					.scroll{
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						overflow: auto;
+					}
+					.biaoqian{
+						display: inline-block;
+						// width: 100px;
+						// height: 34px;
+						// line-height: 34px;
+						font-size: 14px;
+						color: #fff;
+						text-align: center;
+						margin-right: 6px;
+						margin-left: 8px;
+						margin-top: 6px;
+						cursor: pointer;
+					}
+				}
+
+
+			}
+		}
+		.matrialInfoBottom{
+			bottom: 10px;
+		}
+		.footBtn{
+			text-align: right;
+			// border-top: 1px solid #ccc;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			background: #fff;
+			margin-top: 10px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			div{
+				display: inline-block;
+				text-align: center;
+				margin-right: 10px;
+				border-radius:4px;
+				color: #000;
+				font-size: 14px;
+				padding: 5px 15px;
+				border:1px solid #bbb;
+				cursor: pointer;
+			}
+			.blueBg{
+				color: #fff;
+				border:1px solid #63a8eb;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,46 @@
+.task{
+	display: flow-root;
+}
+.task .selectList{
+	border-bottom: 1px solid #DDD;
+	margin-top: 28px;
+	margin-right: 10px;
+	/*margin-bottom: 35px;*/
+}
+.task .selectList ul{
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+}
+.task .selectList ul li{
+	display: inline-block;
+	border: 1px solid #DDD;
+	font-size: 14px;
+	color: #565656;
+	padding: 10px 20px;
+	margin-left: -1px;
+	margin-bottom: -2px;
+	background: #FBFAF8;
+}
+.task .selectList ul li:hover{
+	cursor: pointer;
+}
+.task .selectList ul li input{
+	/*display: inline-block;*/
+	vertical-align: middle;
+	margin-top: 0px;
+}
+.task .selectList ul li.selected{
+	border-bottom-color: #fff;
+	color: #000;
+	background: #FFF;
+}
+.task .selectList ul .changeType{
+	float: right;
+	background: #fff;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	color: #000;
+	padding: 8px 20px;
+	margin-right: 10px;
+}

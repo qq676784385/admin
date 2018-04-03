@@ -1,0 +1,69 @@
+.task{
+	/*display: flow-root;*/
+}
+.task .selectList{
+	border-bottom: 1px solid #DDD;
+	margin-top: 28px;
+	margin-right: 10px;
+}
+.task .selectList ul{
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+
+}
+.task .selectList ul li.titleList{
+	display: inline-block;
+	border: 1px solid #DDD;
+	font-size: 13px;
+	color: #565656;
+	margin-bottom: -1px;
+	background: #FBFAF8;
+	/*max-width: 102px;
+	min-width: 80px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	margin-right: -1px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.task .selectList ul li.selected{
+	border-bottom-color: #fff;
+	border-top-color: #63a8eb;
+	border-top-width: 2px;
+	padding-top: 9px;
+	color: #000;
+
+}
+.task .selectList .titleList:nth-child(10){
+	border-right-width: 1px;
+}
+.task .selectList ul li img{
+	display: inline-block;
+	vertical-align: top;
+}
+.task .selectList ul li:hover{
+	cursor: pointer;
+}
+.task .selectList ul li input{
+	vertical-align: middle;
+	margin-top: 0px;
+}
+
+.task .selectList ul .changeType{
+	float: right;
+	margin-right: 10px;
+	background: #63a8eb;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	padding: 8px 20px;
+}
+.selectList .titleList.pdfTable{
+	max-width: 188px!important;
+	/*min-height: 50px;*/
+}
+.selectList.nothing{
+	height: 40px;
+}

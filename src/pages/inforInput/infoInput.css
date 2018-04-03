@@ -1,0 +1,31 @@
+.inforInput{
+
+}
+.inforInput .inforLabel .line{
+	font-size: 14px;
+	margin-top: 20px;
+}
+.inforInput .inforLabel .line label{
+	display: inline-block;
+	text-align: right;
+	width: 100px;
+}
+.inforInput .inforLabel .line input,.inforInput .inforLabel .line select{
+	height: 32px;
+	width: 216px;
+}
+.inforInput .inforList{
+	margin-top: 20px;
+}
+.inforInput .inforList table{
+	margin-left: 200px;
+}
+.inforInput .inforList table th,.inforInput .inforList table td{
+	padding:5px 10px;
+	text-align: center;
+}
+
+.blueBg{
+	background: #63a8eb!important;
+}
+

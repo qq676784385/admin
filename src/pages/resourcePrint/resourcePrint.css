@@ -1,0 +1,55 @@
+.resourcePrint .backBtn{
+	margin-top: 20px;
+	background: #f7f7f7;
+	border: 1px solid #cccccc;
+	padding: 2px 12px;
+}
+.resourcePrint .printList:last-child{
+	margin-bottom: 20px;
+}
+.resourcePrint .printList .inforList{
+	margin-top: 20px;
+	background-color: #F5F6FA;
+	padding-top: 35px;
+	border:1px solid #E1E6EB;
+	border-radius: 4px;
+	display: table;
+	overflow: hidden;
+}
+.resourcePrint .printList .printTitle{
+	border-left: 2px solid #63a8eb;
+	padding-left: 10px;
+}
+
+.resourcePrint .printList .inforList table{
+	background: #fff;
+	font-size: 14px;
+}
+
+.resourcePrint .printList .inforList table tr:nth-child(1){
+	background: #f1f1f1;
+}
+.resourcePrint .printList .inforList table th,.resourcePrint .printList .inforList table td{
+	padding:10px 46px;
+	text-align: center;
+	border-color: #E1E6EB;
+}
+.resourcePrint .printList .inforList table .firstTr{
+	padding:10px;
+}
+.resourcePrint .printList .inforList table td:nth-child(1){
+	background: #d2e4f2;
+}
+/*新西兰*/
+.printNZL .printList .inforList{
+	padding-top: 0px;
+}
+.printNZL .printList .inforList .title{
+	padding:5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.noTemp{
+	color: #000!important;
+	cursor: default!important;
+}

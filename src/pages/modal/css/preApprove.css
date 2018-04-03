@@ -1,0 +1,90 @@
+.preApprove .cancel {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  font-size: 24px;
+  color: #4C5E70;
+}
+.preApprove .cancel:hover{
+	cursor: pointer;
+}
+
+.preApprove .middle {
+  padding: 10px 20px;
+  width: 370px;
+  font-size: 14px;
+}
+.preApprove .middle .chooseSelect{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.preApprove .middle .chooseSelect div{float: left;margin-right: 26px;}
+.preApprove .middle .chooseSelect form label{font-weight: bold;margin-right: 20px;}
+.preApprove .middle .whyNo .whyTitle{padding: 10px 0;}
+.preApprove .middle .whyNo .part{
+	border: 1px solid #dae1e9;
+	padding: 0px 10px;
+}
+.preApprove .middle .whyNo{
+	margin-top: 10px;
+	position: relative;
+}
+.preApprove .middle .whyNo .cantEdit{
+	opacity: 0.6;
+	background: #eee;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+
+.preApprove .middle .whyNo .part .col:nth-child(1){
+	border-bottom: 1px dashed #ccc;
+}
+.preApprove .middle .whyNo .part .col{
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.preApprove .middle .whyNo .part .col div{
+	margin-bottom: 16px;
+}
+.preApprove .middle .whyNo .part .col form label{
+	/*background: red;*/
+	display: inline-block;
+	width: 120px;
+}
+.preApprove .whyDetail{
+	margin-top: 10px;
+	padding-right: 10px;
+	width: 370px;
+}
+.preApprove .whyDetail textarea{
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	padding: 5px;
+	margin-top: 10px;
+	border-color: #dae1e9;
+}
+.preApprove .footBtns {
+  padding: 10px 20px;
+  text-align: right;
+  border-top: 1px solid #ddd;
+}
+
+.preApprove .footBtns button {
+  padding: 5px 15px;
+  border: 1px solid #ccc
+}
+
+.preApprove .footBtns button:nth-child(1) {
+  background: #63a8eb;
+  color: #fff;
+  border: 1px solid #63a8eb;
+}
+
+.preApprove .footBtns button:nth-child(2) {
+  background: #fff;
+  color: #000;
+}

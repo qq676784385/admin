@@ -1,0 +1,101 @@
+.backplane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: black;
+  font-size: 13px;
+  // background: white;
+
+
+
+  .div {
+    position: absolute;
+    background: #EEEEEE;
+    height: 0px;
+    width: 0px;
+    word-break: break-all;
+    overflow: hidden;
+    // padding-left: 9px;
+    // padding-right: 9px;
+    // padding-top: 9px;
+    // padding-bottom: 9px;
+    -webkit-user-select: none;
+    user-select: none;
+    border:1px solid #ccc;
+
+    .close {
+      position: absolute;
+      background: red;
+      width: 18px;
+      height: 18px;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      color: white;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .seleDiv{
+      border-width: 2px!important;
+      border-style: solid;
+      border-color: #0366d6;
+
+  }
+
+}
+
+.tips {
+  font-size: 13px;
+  // top: 300px;
+  // left: 800px;
+  // width: 200px;
+  // height: 500px;
+  // background: gray;
+  // position: absolute;
+  // right: 0;
+  display: inline-block;
+
+  .tip {
+    display: inline-block;
+    // width:40px;
+    // height: 30px;
+    padding: 8px;
+    // line-height: 30px;
+    // background: #987432;
+    margin: 8px 4px;
+    text-align: left;
+    color: white;
+    border: 2px solid #63a8eb;
+  }
+
+  .sele {
+    border: 2px solid #0366d6;
+  }
+  .created{
+    background: #0366d6 !important;
+  }
+  .seleBG{
+    background: #0366d6!important;
+    // background: #ff0000;
+  }
+}
+
+.b {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  white-space: normal;
+  vertical-align: top;
+  top: 300px;
+  left: 300px;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  background: green;
+  font-size: 14px;
+  cursor: pointer;
+  // position: absolute;
+}

@@ -1,0 +1,79 @@
+.headTitle{
+	background: #63a8eb;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+}
+.headTitle .logoImg{
+	width: 180px;
+	height: 60px;
+	background: #4891d6;
+	text-align: center;
+	float: left;
+}
+.headTitle .logoImg img{
+	margin-top: 10px;
+}
+
+.headTitle .titleText{
+	margin-left: 10px;
+	float: left;
+}
+.headTitle .titleRight{
+	float: right;
+	height: 60px;
+}
+.headTitle .titleRight div:nth-child(1){
+	float: left;
+	border-left: 1px solid #4891d6;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.headTitle .titleRight div:nth-child(2){
+	float: right;
+	border-left: 1px solid #4891d6;
+	padding-left: 40px;
+	/*padding-right: 40px;*/
+}
+.headTitle .titleRight div:nth-child(2):hover{
+	cursor: pointer;
+}
+.headTitle .titleRight .dropdownBtn{
+	float: right;
+	margin-right: 30px;
+	margin-left: 20px;
+	margin-top: 26px;
+}
+.headTitle .titleRight .dropdownBtn.tran90 {
+	transform: rotate(-90deg);
+}
+
+.headTitle .titleRight .userDropdown{
+	position: absolute;
+	top: 59px;
+	right: 0;
+	font-size: 14px;
+	color: #333333;
+	border: 1px solid #EAEAEA;
+	border-top-color: #4891d6; 
+	background: #fff;
+	z-index: 99;
+}
+.headTitle .titleRight .userDropdown ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.headTitle .titleRight .userDropdown ul li{
+	padding-left: 40px;
+	padding-right: 66px;
+}
+.headTitle .titleRight .userDropdown ul li:hover{
+	background: #63a8eb;
+	cursor: pointer;
+	color: #fff;
+}
+.headTitle .titleRight .userDropdown ul .logout{
+	border-top: 1px solid #EAEAEA;
+}
+

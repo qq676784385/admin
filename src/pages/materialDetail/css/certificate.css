@@ -1,0 +1,92 @@
+.certificate{
+	margin-top: 30px;
+}
+.certificate .userInfo{}
+.certificate .userInfo .line{
+	display: inline-block;
+	margin-right: 30px;
+	color: #4C5E70;
+	font-size: 14px;
+}
+.certificate .userInfo .line span{
+	color: #333;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.certificate .userInfo .line input{
+	width: 216px;
+	height: 32px;
+	font-size: 16px;
+	padding-left: 10px;
+	background: #EEE;
+	border: 1px solid #ddd;
+}
+
+.certificate .needMaterial .materialTitle{
+	border-bottom: 1px solid #DDD;
+	padding: 12px 0px;
+	margin-top: 26px;
+}
+.certificate .needMaterial .materialTitle .blueBorder{
+	border-left: 2px solid #63a8eb;
+	padding-left: 10px;
+}
+
+.certificate .needMaterial .materialList{
+	margin-top: 28px;
+	background-color: #F5F6FA;
+	padding-top: 35px;
+	border:1px solid #E1E6EB;
+	border-radius: 10px;
+	display: table;
+	width: 99%;
+}
+.certificate .needMaterial .materialList table{
+	background: #fff;
+	font-size: 14px;
+	width: 100%;
+}
+.certificate .needMaterial .materialList table tr:nth-child(1){
+	background: #f1f1f1;
+}
+.certificate .needMaterial .materialList table tr .numberColor{
+	color: #0064d3;
+}
+
+.certificate .needMaterial .materialList table th,.certificate .needMaterial .materialList table td{
+	padding:10px 40px;
+	text-align: center;
+	border-color: #E1E6EB;
+}
+.certificate .needMaterial .materialList table th:nth-child(1),.certificate .needMaterial .materialList table td:nth-child(1){
+	padding: 10px 10px;
+}
+.certificate .needMaterial .materialList table tr .numberBg{
+	background: #d2e4f2;
+	padding: 10px;
+}
+.certificate .needMaterial .list{
+	font-size: 14px;
+	color: #3D4F60;
+	font-weight: bold;
+}
+.certificate .needMaterial .list div{
+	display: inline-block;
+	border: 1px solid #DDD;
+	text-align: center;
+	position: relative;
+	margin-right: 14px;
+	padding: 5px 10px;
+}
+.certificate .needMaterial .list div:hover{
+	cursor: pointer;
+}
+.certificate .needMaterial .list div .hideSel{
+	display: none;
+}
+.certificate .needMaterial .list div .hasSele{
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+

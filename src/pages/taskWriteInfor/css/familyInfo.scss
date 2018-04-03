@@ -1,0 +1,102 @@
+.contScroll{
+	max-height: 460px;
+	overflow: auto;
+}
+.familyInfo{
+	width:720px;
+	padding: 0px 0px 0px 16px;
+	.cancel{
+		position: absolute;
+		top: 16px;
+		right: 10px;
+		font-size: 24px;
+		color: #4C5E70;
+	}
+	.cancel:hover{
+		cursor:pointer;
+	}
+
+	.info{
+		padding:5px;
+		border-top: 1px dashed #dce1e7;
+
+		.title{
+			font-size: 14px;
+			color: #3d4f60;
+		    font-weight: 700;
+		}
+
+		.cont{
+			div{
+				display: inline-block;
+				margin-bottom: 20px;
+				// padding-right: 2px;
+			}
+			div:nth-child(odd){
+				margin-right: 40px;
+				// background: red;
+			}
+
+			label{
+				width: 100px;
+				display: inline-block;
+				text-align: right;
+				font-size: 14px;
+				vertical-align: middle;
+				color: #4C5E70;
+			}
+			input{
+				display: inline-block;
+			    width: 206px;
+			    height: 28px;
+			    border: 1px solid #ccc;
+			    padding-left: 5px;
+			}
+			select{
+				display: inline-block;
+				width: 210px;
+			    height: 32px;
+			    border: 1px solid #ccc;
+			}
+		}
+	}
+	.info:nth-child(1){
+		border-top-color:transparent; 
+		// border-top-color: #fff;
+		// background: red;
+	}
+	.tip{
+		font-size: 14px;
+		color: #4C5E70;
+	}
+	.btns{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: 1px solid #ccc;
+		margin-top:10px;
+		text-align: right;
+		.saveBtn{
+			background: #63a8eb;
+			border: none;
+			border-radius: 4px;
+			color: #fff;
+			padding: 8px 20px;
+			margin-right: 10px;
+		}
+		.cancelBtn{
+			background: #F8F8F8;
+			border: 1px solid #bbb;
+			color: #000;
+			border-radius: 4px;
+			padding: 8px 20px;
+			margin-right: 10px;
+		}
+		.saveBtn:hover{
+			cursor:pointer;
+		}
+		.cancelBtn:hover{
+			cursor:pointer;
+		}
+	}
+
+}

@@ -1,0 +1,298 @@
+.identification {
+	overflow: hidden;
+}
+.identification :hover{
+	cursor: pointer;
+}
+.identification .cancel {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  font-size: 24px;
+  color: #4C5E70;
+}
+.identification .haveIdCard{
+	padding-left: 22px;
+	margin-bottom: 20px;
+}
+
+.identification .onlyIdcardNum{
+	padding-left: 22px;
+	padding-right: 22px;
+	margin-bottom: 20px;
+}
+.identification .onlyIdcardNum input[type="text"]{
+	padding-left: 5px;
+    height: 26px;
+    width: 204px;
+    border: 1px solid #ddd;
+}
+.identification .onlyIdcardNum input[type="radio"]{
+	height: auto;
+	width: auto;
+	margin-right: 20px;
+}
+.identification .content{
+	padding: 0 22px 22px;
+	min-width: 650px;
+	max-height: 540px;
+	overflow: auto;
+	margin-bottom: 30px;
+}
+.identification .content .part1{
+	padding-bottom: 19px;
+	padding-top: 19px;
+	border-top: 1px solid #ddd;
+}
+.identification .content .part1:nth-child(1){
+	border-top-width: 0px;
+	padding-top: 0px;
+}
+
+.identification .content .part1 .title{
+	font-size: 14px;
+	color: #010101;
+	line-height: 43px;
+}
+.identification .content .part1 .imgDemo{
+	display: inline-block;
+	margin-right: 22px;
+}
+.identification .content .part1 .imgDemo img{
+	width: 256px;
+	height: 170px;
+}
+.identification .uploadBtn{
+	display: inline-block;
+	font-size: 14px;
+	color: #000;
+	border: 1px solid #ddd;
+	width: 130px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+}
+.identification .part1.noDemoImg{
+	text-align: center;
+    height: 200px;
+}
+.identification .part1.noDemoImg .uploadBtn{
+	margin-top: 100px;
+}
+.identification .uploadBtn .fileBtn{
+	display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 130px;
+	height: 32px;
+}
+.identification .uploadBtn img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.identification .content .part1 .realImg{
+	display: inline-block;
+}
+/*.identification .content .part1 .realImg:hover{
+	cursor: pointer;
+}*/
+.identification .content .part1 .realImg>div{
+	display: inline-block;
+	color: #ff0000;
+}
+.identification .content .part1 .realImg .changeBtn{
+	position: relative;
+	color: #0077DD;
+	margin-top: 10px;
+}
+.identification .content .part1 .realImg>div input{
+	position: absolute;
+	background: red;
+	top: 0;
+	width: 60px;
+	opacity: 0;
+}
+.identification .btns{
+	text-align: right;
+	border-top: 1px solid #bbb; 
+	padding: 10px;
+	margin-top:10px;
+	background: #fff;
+	/*margin-bottom:10px;*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.identification .btns .okbtn{
+	background: #63a8eb;
+	display: inline-block;
+	width: 61px;
+	height: 32px;
+	color: #fff;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.identification .btns .cancelbtn{
+	background: #fff;
+	display: inline-block;
+	border: 1px solid #bbb;
+	width: 61px;
+	height: 32px;
+	color: #000;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.identification .addNext{
+	border-top:1px solid #ddd;
+	padding-top: 30px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+
+}
+.identification .addNext .con{
+	display: inline-block;
+	text-align: center;
+}
+.identification .addNext .con .addImg{
+	display: inline-block;
+	border: 1px solid #63a8eb;
+	color: #63a8eb;
+	font-size: 30px;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 5px;
+}
+.identification .addNext .con .addText{
+	font-size: 14px;
+}
+
+
+/*********************/
+.cutImg{
+	/*max-width: 800px;
+	max-height: 900px;
+	overflow: auto;*/
+}
+.cutImg .cutcontent{
+	padding: 0 22px 22px;
+	margin-bottom: 60px;
+}
+.cutImg .uploadBtn{
+	margin-bottom: 10px;
+}
+
+.cutImg .cutcontent .photo{
+	background-color: #ddd;
+	padding: 20px;
+	margin-bottom: 16px;
+	border: 1px solid #bbb;
+	position: relative;
+}
+.cutImg .cutcontent .rotate img{
+	margin-right: 16px;
+}
+.cutImg .cutcontent .rotate span{
+	font-size: 14px;
+	color: #0077DD;
+}
+.cutImg .svg11{
+	position: absolute;
+}
+
+
+/****************************/
+.baseImginfo .imgInfocontent{
+	padding: 0 20px ;
+	max-height: 500px;
+	margin-bottom: 60px;
+	overflow: auto;
+}
+.baseImginfo .imgInfocontent .uploadBtn{
+	margin-bottom: 10px;
+}
+.baseImginfo .imgInfocontent .photo{
+	padding: 16px;
+	margin-bottom: 16px;
+	/*border: 1px solid #bbb;*/
+}
+.baseImginfo .imgInfocontent .imgInfo div{
+	margin-bottom: 6px;
+	font-size: 14px;
+}
+.baseImginfo .imgInfocontent .imgInfo div label{
+	color: #4C5E70;
+}
+.baseImginfo .imgInfocontent .imgInfo div input{
+	border: 1px solid #d7d8da;
+	width: 216px;
+	height: 26px;
+	padding-left: 5px;
+}
+.baseImginfo .imgInfocontent .longTxt{
+	font-size: 14px;
+}
+.different{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255,255,255,.6);
+}
+.different .tipcont{
+	width: 340px;
+	height: 160px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #fff;
+	border: 1px solid #eee;
+	box-shadow: 1px 1px 50px rgba(0,0,0,.3);
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #4C5E70;
+	/*font-size: 14px;*/
+}
+.different .tipcont .tipBtns{
+	text-align: right;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	border-top: 1px solid #bbb;
+	padding-top: 10px;
+	font-size: 15px;
+}
+.different .tipcont .tipBtns div{
+	display: inline-block;
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+.different .tipcont .tipBtns div.ok{
+	background: #63a8eb;
+	color: #fff;
+}
+.different .tipcont .tipBtns div.no{
+	background: #fff;
+	border: 1px solid #bbb;
+}
+
+
+
+
+
+

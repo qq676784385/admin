@@ -1,0 +1,58 @@
+.baseInfoOut{
+	border: 1px solid #DDD;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 70px;
+	padding: 20px;
+	position: relative;
+	.page1{
+		display: inline-block;
+		font-size: 14px;
+		margin-right: 90px;
+		border-right: 1px dashed #dce1e7;
+		width: 416px;
+		vertical-align: top;
+		.partTitle p{
+			border-left: 2px solid #63a8eb;
+			padding-left: 10px;
+			font-size: 16px;
+		}
+		.div_info{
+			.div_key{
+				display: inline-block;
+				width: 98px;
+				text-align: left;
+				margin-right: 10px;
+				color:#3d4f60;
+				vertical-align: middle;
+			}
+			.div_value{
+				display: inline-block;
+				margin-bottom: 16px;
+				.div_input{
+					padding-left: 5px;
+				    height: 26px;
+				    width: 204px;
+				    border: 1px solid #e1e6eb;
+				    display: inline-block;
+				    vertical-align: middle;
+				}
+				.div_select{
+					padding-left: 5px;
+				    height: 30px;
+				    width: 208px;
+				    border: 1px solid #e1e6eb;
+				    display: inline-block;
+				    vertical-align: middle;
+				}
+			}
+			.div_child{
+				margin-left: 20px;
+			}
+		}
+	}
+	.page2{
+		border-right:0;
+		margin-right: 0px;
+	}
+}

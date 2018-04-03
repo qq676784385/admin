@@ -1,0 +1,35 @@
+.ustList{}
+.ustList .ustCont{
+
+}
+.ustList .ustCont>div{
+	margin-top: 16px;
+}
+.ustList .ustCont>div form{
+	margin-top: 10px;
+	margin-left: 16px;
+}
+.ustList .ustCont>div select{
+	height: 26px;
+    width: 204px;
+    border: 1px solid #E1E6EB;
+    display: inline-block;
+    margin-top: 10px;
+}
+.ustList .ustCont>div form label{
+	margin-right: 50px;
+}
+.ustList .ustCont .labelName{
+	display: inline-block;
+	margin-top: 10px;
+	width: 90px;
+	/*background: red;*/
+}
+.ustList .ustCont .labelValue{
+	padding-left: 5px;
+    height: 26px;
+    width: 204px;
+    border: 1px solid #E1E6EB;
+    display: inline-block;
+    vertical-align: middle;
+}

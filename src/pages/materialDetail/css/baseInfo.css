@@ -1,0 +1,72 @@
+.baseInfoOut{
+	border: 1px solid #DDD;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 0 20px;
+}
+.baseInfoOut .baseTitle{
+	/*background: red;*/
+	border-bottom: 1px solid #DDD;
+}
+.baseInfoOut .baseTitle p{
+	border-left: 2px solid #63a8eb;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.baseInfoOut .part{
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 106px;
+	/*margin-top: 10px;*/
+	margin-bottom: 50px;
+}
+.baseInfoOut .part:nth-child(1){
+	background: red;
+}
+.baseInfoOut .part:nth-child(1){
+	background:green;
+}
+.baseInfoOut .part .partList{
+	padding-right: 60px;
+	/*width: 424px;*/
+	border-right: 1px dashed #dce1e7;
+}
+.baseInfoOut .part label{
+	display: inline-block;
+	width: 98px;
+	text-align: left;
+	margin-bottom: 16px;
+	margin-right: 10px;
+	color: #3D4F60;
+} 
+.baseInfoOut .part span{
+	display: inline-block;
+	vertical-align: top;
+}
+.baseInfoOut .part .boldFont{
+	font-weight: bold;
+}
+.baseInfoOut .part .secondLevel{
+	margin-left: 14px;
+}
+.baseInfoOut .part .secondLevel label{
+	/*width: 84px;*/
+}
+.baseInfoOut .part .partTitle{
+	/*font-weight: bold;*/
+	color: #3D4F60;
+	margin-top: 22px;
+}
+.baseInfoOut .part .partTitle p {
+	border-left: 2px solid #63a8eb;
+	padding-left: 10px;
+}
+.baseInfoOut .part .huzhaoImg{
+	margin-bottom: 35px;
+}
+.baseInfoOut .part .huzhaoImg img{
+	width: 318px;
+	height: 200px;
+	border-radius: 10px;
+}

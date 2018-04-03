@@ -1,0 +1,103 @@
+
+.inputtest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background: red;
+  font-size: 13px;
+
+
+  .input {
+      word-break:break-all;
+      // background: #EEEEEE;
+      margin-top: 2PX;
+    .k {
+      display: inline-block;
+      // margin: 8px 8px;
+      vertical-align: middle;
+      word-break:break-word;
+    }
+    .c1 {
+      width: 82px;
+      min-height: 12px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      vertical-align: middle;
+      text-align: center;
+
+      background: #fff;
+      border:1px solid #ddd;
+    }
+    .c2 {
+      width: 200px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 4px;
+      background: #fff;
+      border:1px solid #ddd;
+      min-height: 18px;
+    }
+    .c2:nth-child(2){
+      margin-right: 17px;
+    }
+    select.c2{
+      width: 206px;
+    }
+  }
+  .tipsplane{
+    position: absolute;
+    max-height: 350px;
+    min-height: 0px;
+    width: 82px;
+    overflow: auto;
+    background: #fff;
+    // box-shadow: 1px 1px 5px #7A7A7A;
+    border: 1px solid #ccc;
+    // background: red;
+    .tip{
+      // width: 160px;
+      padding: 4px;
+      // background: blue;
+      margin-top: 2px;
+      color:#666;
+    }
+    .seletip{
+      background: gray;
+    }
+  }
+  .noData{
+    border:0;
+  }
+  .x_b {
+    display: inline-block;
+    text-align: center;
+    // white-space: normal;
+    vertical-align: top;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    color:#000;
+    border: 1px solid #bbb;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  .txt_title{
+    font-size: 14px;
+    color: #010101;
+    font-weight: bold;
+    .chs{
+      display: inline-block;
+      width: 298px;
+      height: 34px;
+      line-height: 34px;
+    }
+    .chs:nth-child(1){
+      margin-right: 17px;
+    }
+
+  }
+}

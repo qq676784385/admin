@@ -1,0 +1,114 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: #F7F7F7;
+}
+
+.main {
+  padding-top: 60px;
+}
+
+.main .mainTitle {
+  height: 60px;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.main .mainAside {
+  background: #273238;
+  float: left;
+  position: fixed;
+  height: 100%;
+  color: #fff;
+  z-index: 4;
+}
+
+.main .mainCont {
+  margin-left: 214px;
+  min-width: 1042px;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.main .mainCont.addLeft{
+  margin-left: 394px;
+}
+
+.noListStyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:before,.clearfix:after{
+	display: table;
+	content: " ";
+}
+.clearfix:after{
+	clear:both;
+}
+
+/*弹窗样式修改*/
+.notify .notify-alert h2.notice-title{
+  width: auto!important;
+  pointer-events: none;
+  /*display: none;*/
+}
+
+.notify .notify-msg{
+  line-height: 48px;
+}
+
+.notify .notify-mask{
+  background-color: #fff!important;
+  opacity: .6!important;
+  pointer-events: none;
+}
+.notify .notify-iframe{
+  /*max-height: 93%;*/
+  max-height: 760px;
+  overflow: hidden;
+}
+.notify .notify-btns{
+  /*padding: 0 8px 8px 0;*/
+  margin-bottom: 10px;
+}
+.btn-primary{
+  background-color:#63a8eb!important;
+  border: 1px solid #63a8eb!important;
+}
+.btn-primary.active, .btn-primary:active{
+  background-color:#63a8eb!important;
+}
+
+/* 送签日历去掉箭头 */
+/*#cal .step{
+  display: none;
+}*/
+
+/*******************/
+a{
+  text-decoration:none;
+}
+a:link{
+  /*color:#0077dd;*/
+}
+a:hover{
+  /*color:#3d4f60;*/
+}
+a:active{
+  /*color:#3d4f60;*/
+}
+a:visited{
+  /*color:green;*/
+}
+
+
+.grayBg{
+  background: #CCC!important;
+}
+
+

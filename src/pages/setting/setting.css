@@ -1,0 +1,95 @@
+.setting{
+	/*display: inline-block;*/
+	/*margin-left: 210px;*/
+	color: #3D4F60;
+}
+.setting .setTitle{
+	border-bottom: 1px solid #DDD;
+}
+.setting .setTitle p{
+	border-left: 2px solid #63a8eb;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.setting .selectCity{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DDD;
+	font-size: 14px;
+}
+.setting .selectCity select{
+	height: 26px;
+	width:200px;
+}
+
+.selectedCont{
+	margin-top: 16px;
+	margin-bottom: 60px;
+}
+.line1 .cont{
+	border-right: 1px solid #ddd;
+	padding-right: 170px; 
+	font-size: 14px;
+	/*background: red;*/
+}
+.line1,.line2{
+	/*text-align: left;*/
+	/*margin: 0 auto;*/
+	display: inline-block;
+	/*margin-right: 170px; */
+	vertical-align: top;
+}
+.line1{
+	width: 40%;
+}
+.line2{
+	width: 40%;
+	padding-left: 100px;
+}
+.line2 .cont{
+	font-size: 14px;
+}
+
+.line1 select ,.line2 select{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 26px;
+	width:200px;
+}
+.line1 input ,.line2 input{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 26px;
+	width:200px;
+}
+.selectedCont .part1{
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 10px;
+}
+.selectedCont .part1 .title{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.selectedCont .part1 label{}
+.selectedCont .part1 input{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	height: 20px;
+	width:200px;
+}
+.selectedCont .part2{
+	/*column-count: 2;*/
+	/*column-gap: 50px;*/
+	/*text-align: center;*/
+}
+.setting .btnGroup{
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+}
+.setting .userCont{
+	display: inline-block;
+	font-size: 14px;
+}
+

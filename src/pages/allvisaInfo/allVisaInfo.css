@@ -1,0 +1,181 @@
+.inforInput{
+
+}
+.inforInput .inforLabel .line{
+	font-size: 13px;
+	color: #4C5E70;
+}
+.inforInput .inforLabel .line>div{
+	display: inline-block;
+	margin-top: 20px;
+}
+.inforInput .inforLabel .line label{
+	display: inline-block;
+	text-align: right;
+	width: 71px;
+}
+.inforInput .inforLabel .line input,.inforInput .inforLabel .line select{
+	height: 26px;
+	width: 190px;
+	border: 1px solid #bbb;
+}
+.inforInput .inforLabel .line select{
+	height: 30px;
+}
+.inforInput .inforLabel .line .searchBtn{
+	background: #63a8eb;
+	border: none;
+	color: #fff;
+	height: 32px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 3px;
+	margin-left: 30px;
+}
+.inforInput .inforList{
+	/*margin-top: 20px;*/
+	background-color: #F5F6FA;
+	padding-top: 35px;
+	border:1px solid #E1E6EB;
+	border-top-color: transparent;
+	border-radius: 4px;
+	display: table;
+	overflow: hidden;
+	width: 99%;
+}
+.inforInput .inforList .tableTitle{
+}
+.inforInput .inforList table{
+	background: #fff;
+	font-size: 13px;
+	width: 100%;
+}
+.inforInput .inforList table tr:nth-child(1){
+	background: #f1f1f1;
+}
+.inforInput .inforList table th,.inforInput .inforList table td{
+	text-align: center;
+	border-color: #E1E6EB;
+}
+.inforInput .inforList table th,.inforInput .inforList table td .lineTop{
+	margin-bottom: 6px;
+}
+.inforInput .inforList table th:nth-child(1),.inforInput .inforList table td:nth-child(1){
+	padding:10px;
+}
+.inforInput .inforList table td:nth-child(1){
+	/*background: #d2e4f2;*/
+}
+.inforInput .inforList .otherLine{
+	background: #fff;
+	padding: 10px 2px;
+	border-top:1px solid #ddd;
+}
+.inforInput .inforList .otherLine button{
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 3px 10px;
+}
+
+.blueBg{
+	background: #63a8eb!important;
+}
+.whiteBg{
+	background: #ffffff!important;
+}
+.link{
+	color: #0077dd;
+	word-break: keep-all;
+}
+.link:hover{
+	cursor: pointer;
+}
+.grayColor{
+	color: #ccc;
+}
+
+.inforList .page{
+	padding: 12px;
+	color: #888;
+	font-size: 13px;
+	text-align: right;
+	border-top:1px solid #E1E6EB;
+}
+.inforList .page>div{
+	display: inline-block;
+}
+.inforList .page .p2,.inforList .page .p3,.inforList .page .p4{margin-left: 10px;}
+.inforList .page .p2 span{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #ddd;
+	text-align: center;
+	line-height: 32px;
+	margin-left: -1px;
+}
+.inforList .page .p2 span.blue{
+	background: #63a8eb;
+	color: #fff;
+}
+
+.inforList .page .p3 input{
+	width: 34px;
+	height: 30px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+.inforList .page .p4{
+	width: 32px;
+	height: 32px;
+	border: 1px solid #ddd;
+	line-height: 32px;
+	text-align: center;
+}
+.inforList .page .p2 span:hover,.inforList .page .p4:hover{
+	cursor: pointer;
+}
+/*************************/
+.inforInput .czTable{
+	/*background: #ff0099;*/
+	/*margin-bottom: -16px;*/
+
+	margin-top: 20px;
+	width: 99%;
+}
+.inforInput .czTable ul{
+	list-style: none;
+	padding: 0;
+	font-size: 0;
+	/*margin: 0;*/
+	border-bottom: 1px solid #ddd;
+	height: 38px;
+}
+.inforInput .czTable ul li{
+	font-size: 14px;
+	float: left;
+	width: 84px;
+	line-height: 38px;
+	text-align: center;
+	margin-right: -1px;
+	border: 1px solid #ddd;
+	border-bottom-color: #F5F6FA;
+}
+.inforInput .czTable ul li:hover{
+	cursor: pointer;
+}
+.inforInput .czTable ul li.selected{
+	/*background: red;
+	margin-bottom: -20px;*/
+	/*border-bottom-color: #fff000;*/
+    border-top-color: #63a8eb;
+    border-top-width: 2px;
+    /*padding-top: 9px;*/
+    color: #000;
+    background: #F5F6FA;
+    /*margin-bottom: -1px*/
+}
+.inforList.addBorder{
+	margin-top: 20px;
+	border-top-color: #E1E6EB;
+}

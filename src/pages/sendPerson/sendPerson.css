@@ -1,0 +1,97 @@
+.sendPreson .sendTitle{
+	border-left: 2px solid #63a8eb;
+	padding-left: 10px;
+
+}
+.sendPreson .chooseTime{
+	font-size: 14px;
+	margin-bottom: 10px;
+	color:#4c5d71;
+}
+.sendPreson .chooseTime .dateTime{
+	display: inline-block;
+	height: 32px;
+	width: 216px;
+	line-height: 32px;
+	padding-left: 10px;
+	border: 1px solid #dcdfe4;
+	vertical-align: middle;
+	margin-left: 16px;
+	margin-right: 28px;
+}
+.sendPreson .choosePerson{
+	font-size: 14px;
+	margin-top: 20px;
+	color:#4c5d71;
+}
+.sendPreson .chooseTime label,.sendPreson .choosePerson label{
+	/*background: red;
+	display: inline-block;
+	width: 60px;
+	text-align: right;*/
+}
+.sendPreson .choosePerson input{
+	height: 32px;
+	width: 216px;
+	border: 1px solid #dcdfe4;
+	margin-left: 16px;
+}
+.sendPreson .okBtn button{
+	background: #006bc9;
+	color: #fff;
+	border: none;
+	padding: 6px 20px;
+	margin-top: 20px;
+	margin-left: 60px;
+	border-radius: 2px;
+}
+.sendPreson .x_calender{
+	margin-left: 66px;
+}
+.sendPreson .x_calender #cal #top{
+	background: #fff;
+	color: #8b8b8b;
+	border-color: #57acff;
+	border-width: 2px;
+}
+.sendPreson .x_calender #cal ul#wk{
+	border-color: #57acff;
+	border-width: 2px;
+}
+.sendPreson .x_calender #cal #cm{
+	border-color: #57acff;
+	border-width: 2px;
+	border-bottom-style: solid;
+}
+.sendPreson .x_calender #cal #bm{
+	display: none;
+}
+
+.sendPreson .x_calender #cal #cm .cell.yellowBg{
+	background: #ffbb00!important;
+}
+
+.a{
+	background: #ff0000;
+}
+.left{
+	background: #fff000;
+	display: inline-block;
+}
+.right{
+	background: #ffbb00;
+	display: inline-block;
+	width: 100px;
+	margin: auto;
+}
+.sendPreson .selectSend{
+	font-size: 14px;
+	color:#4c5d71;
+	margin-bottom: 16px;
+}
+.sendPreson .selectSend form{
+	display: inline-block;
+}
+.sendPreson .selectSend form label{
+	margin-right: 20px;
+}

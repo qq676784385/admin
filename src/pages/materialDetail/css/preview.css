@@ -1,0 +1,50 @@
+.preview{padding:0 0 10px 10px;}
+
+.preview .cancel{position: absolute;top: 16px;right: 10px;font-size: 24px;color: #4C5E70;}
+.preview .cancel:hover{cursor:pointer;}
+
+.preview .saveInfo{padding-top: 10px;border-top: 1px solid #ccc;margin-top:10px;text-align: right;}
+.preview .saveInfo button{background: #63a8eb;border: none;border-radius: 4px;color: #fff;padding: 8px 20px;margin-right: 10px;}
+.preview .saveInfo button.cancelBtn{background: #F8F8F8;border: 1px solid #bbb;color: #000;}
+.preview .x_part:nth-child(2){padding-bottom: 10px;}
+.preview .x_part:nth-child(3){border-top:1px solid #ddd;padding-top: 10px;}
+.preview .x_part .partInfo{width: 680px;}
+.preview .x_part .partInfo .col{display: inline-block;margin-top: 10px;}
+.preview .x_part .partInfo .col:nth-child(1){width: 340px;}
+.preview .x_part .partInfo .col.addBorder{width: 325px;border-right: 1px dashed #ddd;margin-right: 32px;}
+.preview .x_part .partInfo .col .partImg{margin-bottom: 10px;}
+.preview .x_part .partInfo .col label{width: 96px;text-align: right;color: #4C5E70;}
+.preview .x_part .partInfo .col span{display:inline-block;width: 160px;height: 29px;margin-bottom: 5px;padding-left: 4px;}
+.preview .x_part .title{margin-bottom: 10px;font-size: 14px;}
+.preview .changePage{
+	text-align: center;
+}
+.preview .changePage:hover{
+	cursor: pointer;
+}
+.preview .changePage div{
+	display: inline-block;
+	border: 1px solid #bbb;
+	margin-left: 10px;
+}
+.preview .changePage .prev,.preview .changePage .next{
+	background: #F8F8F8;
+	padding: 4px 8px;
+}
+.preview .changePage .x_page{
+	border: none;
+}
+.preview .changePage .pageN{
+	/*text-align: center;*/
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #bbb;
+
+}
+.preview .changePage .pageN.selected{
+	background: #63a8eb;
+	color: #fff;
+	border-color: transparent;
+}
+
+	

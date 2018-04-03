@@ -1,0 +1,124 @@
+.aside {
+	text-align: center;
+	height: 100%;
+}
+.aside div:hover{
+	cursor: pointer;
+}
+
+.asideLeft {
+	float: left;
+	background: #273238;
+	height: 100%;
+	width: 180px;
+	position: relative;
+	/*margin: 10px;*/
+}
+
+.asideRight {
+	float: left;
+	height: 100%;
+	width: 180px;
+	background: #e9ecf1;
+	color: #2a2a2a;
+}
+
+.asideLeftIcon {
+	background: #394555;
+	color: #85aec0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.aside .asideLeft .visaInfo{
+	margin-bottom: 1px;
+}
+.aside .asideLeft .visaInfo .visaInfoTitle {
+	background: #21282e;
+	color: #fff;
+	font-size: 14px;
+	padding: 0px 10px;
+	text-align: left;
+}
+.aside .asideLeft .visaInfo .visaInfoTitle .leftIcon{
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+.aside .asideLeft .visaInfo .visaInfoTitle .rightIcon{
+	float: right;
+	margin-top: 18px;
+	margin-right: 10px;
+}
+.trans90{
+	transform: rotate(-90deg);
+}
+
+.aside .asideLeft .visaInfo .noListStyle {
+	color: #fff;
+	font-size: 14px;
+}
+.aside .asideLeft .visaInfo .noListStyle li span{
+	pointer-events: none;
+}
+.aside .asideLeft .visaInfo .noListStyle li .dropIcon{
+	position: absolute;
+	right: 20px;
+	top: 18px;
+}
+.aside .asideLeft .visaInfo .noListStyle li,.aside .asideLeft .visaInfo .visaInfoTitle{
+	/*height: 40px;*/
+	line-height: 40px;
+	position: relative;
+
+}
+
+.asideRight .rightTitle{
+	height: 70px;
+	line-height: 70px;
+	background: #d9dee4;
+}
+.asideRight .noListStyle li{
+	height: 40px;
+	line-height: 40px;
+}
+.asideRight .noListStyle li.active{
+	background: #fff;
+}
+.asideLeft .noListStyle.hideList,.asideRight .noListStyle.hideList{
+	display: none;
+}
+.asideRight.hideSecondLevel{
+	display: none;
+}
+.asideRight .closeImg{
+	position: absolute;
+	top: -80px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.asideRight .openImg{
+	position: absolute;
+	top: -80px;
+	right: -20px;
+	bottom: 0;
+	margin: auto;
+}
+.aside .asideLeft .visaInfo .noListStyle li.fistLevel{
+	display: inline-block;
+	width: 100%;
+}
+
+/*二级目录*/
+.aside .asideLeft .visaInfo .noListStyle li .secondLevel{
+	background: #273238;
+	color: #fff;
+	margin-right: 1px;
+
+}
+.aside .asideLeft .visaInfo .noListStyle li .secondLevel li{
+	/*border-bottom: 1px solid #ddd;*/
+	padding-left: 30px;
+}
+

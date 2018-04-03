@@ -1,0 +1,154 @@
+.certificate{
+	margin-top: 30px;
+}
+.certificate .userInfo .line{
+	display: inline-block;
+	color: #4C5E70;
+	font-size: 14px;
+	width: 31%;
+	margin-bottom: 10px;
+}
+.certificate .userInfo .line label{
+	/*background: red;*/
+	width: 86px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	margin-right: 5px;
+}
+.certificate .userInfo .line .saveInfo{
+	display: inline-block;
+	background: #63a8eb;
+	border-radius: 4px;
+	color: #fff;
+	padding: 8px 20px;
+}
+.certificate .userInfo .line .saveInfo:hover{
+	cursor: pointer;
+}
+.certificate .userInfo .line span{
+	color: #333;
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 206px;
+	height: 28px;
+	line-height: 32px;
+	font-size: 14px;
+	padding-left: 10px;
+	background: #EEE;
+	border: 1px solid #ddd;
+}
+.certificate .userInfo .line .whiteBg{
+	background: #fff;
+	border-width: 0;
+}
+.certificate .userInfo .line input{
+	width: 210px;
+	height: 32px;
+	font-size: 16px;
+	padding-left: 10px;
+	background: #EEE;
+	border: 1px solid #ddd;
+}
+.certificate .userInfo .line select{
+	display: inline-block;
+	width: 210px;
+	height: 32px;
+	border: 1px solid #ccc;
+}
+
+.certificate .needMaterial .materialTitle{
+	border-bottom: 1px solid #DDD;
+	padding: 12px 0px;
+	margin-top: 10px;
+}
+.certificate .needMaterial .materialTitle .blueBorder{
+	border-left: 2px solid #63a8eb;
+	padding-left: 10px;
+}
+
+.certificate .needMaterial .materialList{
+	background-color: #F5F6FA;
+	padding-top: 35px;
+	border:1px solid #E1E6EB;
+	border-radius: 10px;
+	display: table;
+	width: auto;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	overflow: hidden;
+}
+.certificate .needMaterial .materialList table{
+	background: #fff;
+	font-size: 14px;
+	width: 100%;
+}
+.certificate .needMaterial .materialList table tr:nth-child(1){
+	background: #f1f1f1;
+}
+.certificate .needMaterial .materialList table tr .numberColor{
+	color: #0064d3;
+}
+
+.certificate .needMaterial .materialList table th,.certificate .needMaterial .materialList table td{
+	padding:10px 40px;
+	text-align: center;
+	border-color: #E1E6EB;
+}
+.certificate .needMaterial .materialList table th:nth-child(1),.certificate .needMaterial .materialList table td:nth-child(1){
+	padding: 10px 10px;
+}
+.certificate .needMaterial .materialList table tr .numberBg{
+	background: #d2e4f2;
+	padding: 10px;
+}
+.certificate .needMaterial .materialList table tr .addIcon{
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 5px;
+}
+.certificate .needMaterial .materialList table tr .addIcon:hover{
+	cursor: pointer;
+}
+.certificate .needMaterial .list{
+	font-size: 14px;
+	color: #3D4F60;
+}
+.certificate .needMaterial .list .titleTxt{
+	margin: 12px 0;
+	font-weight: bold;
+
+}
+.certificate .needMaterial .list div.isFill{
+	border-color: #64a7eb;
+	color: #64a7eb;
+}
+.certificate .needMaterial .materialList table tr .uploadInput{
+	position: relative;
+}
+.certificate .needMaterial .materialList table tr .uploadInput input{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 5px;
+	bottom: 0;
+	opacity: 0;
+}
+.certificate .needMaterial .materialList table tr .uploadInput input:hover{
+	cursor: pointer;
+}
+.certificate .needMaterial .materialList table tr td.redColor{
+	color: #ff0000;
+}
+.certificate .needMaterial .materialList table tr td.redColor:hover{
+	cursor: pointer;
+}
+.certificate .needMaterial .materialList table tr td.delPadding{
+	padding: 10px 20px;
+}
+
+.nothingA{
+	color:#3D4F60!important;
+}
