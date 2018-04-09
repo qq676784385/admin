@@ -35,8 +35,8 @@
 				meterialDetail:'',
 				pdfTag:null,
 				visaPdf:"false",
-				countryName:["澳大利亚","美国","新西兰"],//签证模式要调用的国家id
-				showPdfCountry:["澳大利亚","新西兰","意大利"],//哪些国家需要显示签证模式
+				// countryName:["澳大利亚","美国EVUS","新西兰"],//签证模式要调用的国家id
+				showPdfCountry:["澳大利亚","新西兰","意大利","捷克","西班牙","瑞典"],//哪些国家需要显示签证模式
 
 			}
 		},
@@ -46,7 +46,7 @@
 				this.$store.state.visa.country = this.$root.get("country")
 				this.$store.state.visa.groupId = par.groupId
 				this.$store.state.visa.groupName = par.groupName
-				this.$root.set("Groupid",this.$store.state.visa.groupId)
+				this.$root.set("GroupId",this.$store.state.visa.groupId)
 
 				if(this.selectContModalID!=0){
 					this.selectContModal = "BaseInfo"
@@ -64,12 +64,87 @@
 			createSubmitFile(){
 				var wait = this.$layer.loading()
 				// 生成模板文件
-				if(this.countryName.indexOf(this.$store.state.visa.country)>-1){
+				/*if(this.countryName.indexOf(this.$store.state.visa.country)>-1){
 					var CountryNumber = this.countryName.indexOf(this.$store.state.visa.country)+1
+				}*/
+				// 之前没有考虑到团签，现在考虑团签 防止以后再改国家的id 分开写 ！！！
+				var countryId = null
+				if(this.$root.get("isGroupVisa") == "true"){
+					// 团签
+					switch (this.$store.state.visa.country) {
+						case "英国":
+						countryId = "11"
+						break;
+						case "比利时":
+						countryId = "13"
+						break;
+						case "美国":
+						countryId = "14"
+						break;
+						case "法国":
+						countryId = "15"
+						break;
+						case "意大利":
+						countryId = "16"
+						break;
+						case "捷克":
+						countryId = "17"
+						break;
+						case "瑞典":
+						countryId = "18"
+						break;
+						case "西班牙":
+						countryId = "20"
+						break;
+					}
+				}else{
+					// 个签
+					switch (this.$store.state.visa.country) {
+						case "澳大利亚":
+						countryId = "1"
+						break;
+						case "美国EVUS":
+						countryId = "2"
+						break;
+						case "新西兰":
+						countryId = "3"
+						break;
+						case "英国":
+						countryId = "4"
+						break;
+						case "法国":
+						countryId = "5"
+						break;
+						case "比利时":
+						countryId = "6"
+						break;
+						case "意大利":
+						countryId = "7"
+						break;
+						case "奥地利":
+						countryId = "8"
+						break;
+						case "捷克":
+						countryId = "9"
+						break;
+						case "葡萄牙":
+						countryId = "10"
+						break;
+						case "美国":
+						countryId = "12"
+						break;
+						case "西班牙":
+						countryId = "19"
+						break;
+						case "瑞典":
+						countryId = "21"
+						break;
+					}
 				}
+
 				this.$http.post(this.$store.state.app.host + 'api/Manage/CreateSubmitFiles',{
 					UserVisaID:this.$store.state.app.ivisaId,
-					CountryNumber:CountryNumber
+					CountryNumber:countryId
 				},{headers:{Authorization: this.$store.state.app.token},timeout: this.$store.state.app.httpTime})
 				.then(
 					function(res){
@@ -136,7 +211,7 @@
 				this.$root.set("VisaPdf",this.visaPdf)
 				this.$store.state.app.canEdit = false
 				this.$store.state.visa.groupId = 0
-				this.$root.set("Groupid",this.$store.state.visa.groupId)
+				this.$root.set("GroupId",this.$store.state.visa.groupId)
 				if(this.$store.state.visa.country == "新西兰"){
 					this.selectContModal = "MaterialDetailNewZealand"
 				}else{
@@ -184,7 +259,7 @@
 		},
 		created(){
 			this.$store.state.visa.groupId = 0
-			this.$root.set("Groupid",this.$store.state.visa.groupId)
+			this.$root.set("GroupId",this.$store.state.visa.groupId)
 			this.$store.state.app.token = this.$root.get("AppToken")
 			this.$store.state.app.ivisaId = this.$root.get("IvisaId")
 			this.addBgId = this.$root.get("addBgId")

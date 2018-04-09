@@ -25,7 +25,7 @@
 			</div>
 			<div>
 				<label>职业：</label>
-				<select v-model='detailInfo.Identity' v-if="detailInfo.Identity=='法国'||detailInfo.Identity=='奥地利'||detailInfo.Identity=='葡萄牙'||detailInfo.Identity=='意大利'||detailInfo.Identity=='美国'||detailInfo.Identity=='英国'">
+				<select v-model='detailInfo.Identity' v-if="detailInfo.Country=='法国'||detailInfo.Country=='奥地利'||detailInfo.Country=='葡萄牙'||detailInfo.Country=='意大利'||detailInfo.Country=='美国'||detailInfo.Country=='英国'">
 			        <option value='1'>自雇</option>
 			        <option value='6'>受雇</option>
 			        <option value='5' v-if='detailInfo.VisaType!=4'>自由职业</option>

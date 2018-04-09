@@ -244,6 +244,9 @@ export default {
 
       } else {
         // 输入框 input
+        if(dataObj.ValueENG == "长期"){
+            dataObj.ValueENG = "long"
+        }
         $(info_input).val(dataObj.ValueENG)
         $(info_input).attr("disabled", dataObj.Disabled)
         if($(Div_info).find(".info_input").attr("id")&&$(Div_info).find(".info_input").attr("id").indexOf("mobiscroll") > -1){

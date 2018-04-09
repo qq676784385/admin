@@ -171,7 +171,7 @@
           </div>
           <div class="lineTop">
             <span class="link" v-if='modalId == "8" || modalId == "10"' v-tap='{methods:preApproveFun,id:visaInfo.VisaID}'>预审&nbsp;</span>
-            <div v-tap='{methods:createSubmitFile,id:visaInfo.VisaID,country:visaInfo.Destination}'>
+            <div v-tap='{methods:createSubmitFile,id:visaInfo.VisaID,country:visaInfo.Destination,isGroupVisa:visaInfo.IsGroupVisa}'>
               <span class="link" v-if='modalId == "9"||modalId>13'>打印</span>
               <span class="link" v-if='modalId== "9"||modalId>13'>/</span>
               <span class="link" v-if='modalId == "9"||modalId>13'>下载</span>
@@ -252,7 +252,7 @@ export default {
       daoruIng: null,
       daoruIdAry: [],
       showIndex: this.$root.get("showIndex"),
-      countryName: ["澳大利亚", "美国EVUS", "新西兰","英国"],
+      // countryName: ["澳大利亚", "美国EVUS", "新西兰","英国"],
       isUZ:false
     }
   },
@@ -655,18 +655,95 @@ export default {
       this.getIvisaList()
     },
     createSubmitFile(par) {
+
       var wait = this.$layer.loading()
       // 生成模板文件
       // alert(par.id)
+
       this.$root.set("country", par.country)
+      this.$root.set("isGroupVisa", par.isGroupVisa)
 
-
-      if (this.countryName.indexOf(par.country) > -1) {
-        var CountryNumber = this.countryName.indexOf(par.country) + 1
+      // 生成模板文件
+      /*if(this.countryName.indexOf(this.$store.state.visa.country)>-1){
+          var CountryNumber = this.countryName.indexOf(this.$store.state.visa.country)+1
+      }*/
+      // 之前没有考虑到团签，现在考虑团签 防止以后再改国家的id 分开写 ！！！
+      var countryId = null
+      if(this.$root.get("isGroupVisa") == "true"){
+          // 团签
+          switch (this.$store.state.visa.country) {
+              case "英国":
+              countryId = "11"
+              break;
+              case "比利时":
+              countryId = "13"
+              break;
+              case "美国":
+              countryId = "14"
+              break;
+              case "法国":
+              countryId = "15"
+              break;
+              case "意大利":
+              countryId = "16"
+              break;
+              case "捷克":
+              countryId = "17"
+              break;
+              case "瑞典":
+              countryId = "18"
+              break;
+              case "西班牙":
+              countryId = "20"
+              break;
+          }
+      }else{
+          // 个签
+          switch (this.$store.state.visa.country) {
+              case "澳大利亚":
+              countryId = "1"
+              break;
+              case "美国EVUS":
+              countryId = "2"
+              break;
+              case "新西兰":
+              countryId = "3"
+              break;
+              case "英国":
+              countryId = "4"
+              break;
+              case "法国":
+              countryId = "5"
+              break;
+              case "比利时":
+              countryId = "6"
+              break;
+              case "意大利":
+              countryId = "7"
+              break;
+              case "奥地利":
+              countryId = "8"
+              break;
+              case "捷克":
+              countryId = "9"
+              break;
+              case "葡萄牙":
+              countryId = "10"
+              break;
+              case "美国":
+              countryId = "12"
+              break;
+              case "西班牙":
+              countryId = "19"
+              break;
+              case "瑞典":
+              countryId = "21"
+              break;
+          }
       }
       this.$http.post(this.$store.state.app.host + 'api/Manage/CreateSubmitFiles', {
           UserVisaID: par.id,
-          CountryNumber: CountryNumber
+          CountryNumber: countryId
         }, {
           headers: {
             Authorization: this.$store.state.app.token

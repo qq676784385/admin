@@ -158,7 +158,7 @@
 import Preview from './Preview.vue'
 import DelectAll from './DelectAll.vue'
 import Identification from './Identification.vue'
-import PreviewENG from './PreviewENG.vue'
+// import PreviewENG from './PreviewENG.vue'
 import PreviewENG2 from './PreviewENG2.vue'
 
 
@@ -399,7 +399,6 @@ export default {
     'Preview': Preview,
     "Identification":Identification,
     "DelectAll":DelectAll,
-    "PreviewENG":PreviewENG,
     "PreviewENG2":PreviewENG2
   },
   destroyed(){

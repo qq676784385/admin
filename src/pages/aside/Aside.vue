@@ -137,11 +137,11 @@
 					}else{
 						this.dropdown = !this.dropdown
 					}
-					
+
 				}else{
 					this.dropdown = false
 				}
-				
+
 				if(this.addBgId<9 || this.addBgId ==11){
 					this.$root.set('addBgId',this.addBgId)
 					this.$root.set('isIvisa',par.isIvisa)
