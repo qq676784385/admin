@@ -32,12 +32,12 @@
 						<label>职业：</label>
 						<select v-model='certificateInfo.Identity'>
 							<option value='1'>自雇</option>
-							<option value='2'>学生(18岁以下)</option>
-							<option value='3'>学生(18岁及以上)</option>
-							<option value='4'>退休</option>
-							<option value='5'>自由职业</option>
+							<option value='2' v-if='certificateInfo.VisaType!=4'>学生(18岁以下)</option>
+							<option value='3' v-if='certificateInfo.VisaType!=4'>学生(18岁及以上)</option>
+							<option value='4' v-if='certificateInfo.VisaType!=4'>退休</option>
+							<option value='5' v-if='certificateInfo.VisaType!=4'>自由职业</option>
 							<option value='6'>受雇</option>
-							<option value='7'>学龄前儿童</option>
+							<option value='7' v-if='certificateInfo.VisaType!=4'>学龄前儿童</option>
 						</select>
 					</div>
 					<div>
@@ -73,7 +73,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="info" v-if='SpouseApply.Passport'>
+			<div class="info" v-if='certificateInfo.IsSpouseFollow===true'>
 				<div class="title">
 					配偶信息
 				</div>
@@ -146,6 +146,13 @@
 				// this.$root.$emit('REFRESHINFO')
 			},
 			saveFun(){
+
+				/*if(this.certificateInfo.VisaType == 4){
+					this.certificateInfo.IsSpouseFollow = false
+					this.SpouseApply.Identity = ""
+					this.ChildrenApply = []
+				}*/
+				//
 		    	this.$http.post(this.$store.state.app.host + 'api/Manage/ModifyVisaInfo4NZL',{
 		    		Career:this.certificateInfo.Identity,
 					VisaType:this.certificateInfo.VisaType,
