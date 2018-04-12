@@ -244,6 +244,9 @@ export default {
 
       } else {
         // 输入框 input
+        if(dataObj.ValueENG == "长期"){
+            dataObj.ValueENG = "long"
+        }
         $(info_input).val(dataObj.ValueENG)
         $(info_input).attr("disabled", dataObj.Disabled)
         if($(Div_info).find(".info_input").attr("id")&&$(Div_info).find(".info_input").attr("id").indexOf("mobiscroll") > -1){
@@ -333,7 +336,10 @@ export default {
     },
     selectChange(el, parentEl, dataObj, selectValue) {
       if (dataObj.Options&&!isNaN(dataObj.Options[dataObj.Options.length - 1].ValueENG) && dataObj.Options[dataObj.Options.length - 1].Value == dataObj.Options[dataObj.Options.length - 1].ValueENG) {
-        this.moreSelectChange(el, parentEl, dataObj, selectValue)
+
+          if($(el)[0].selectedIndex>0&&dataObj.Children.length>0){
+              this.moreSelectChange(el, parentEl, dataObj, selectValue)
+          }
       } else if (dataObj.FieldType == 2) {
         if (selectValue == "China") {
             var that = this

@@ -38,6 +38,16 @@
           <option value='2'>学生（18岁以下）</option>
           <option value='7' v-if='certificateInfo.VisaType!=4'>学龄前儿童</option>
         </select>
+        <select v-model='detailInfo.Identity' v-else-if="detailInfo.Country=='挪威'&&$root.get('isGroupVisa') == 'false'">
+            <!-- 挪威 个签 只有探亲才可以有自由职业 -->
+            <option value='1'>自雇</option>
+            <option value='6'>受雇</option>
+            <option value='5' v-if='detailInfo.VisaType!=4&&detailInfo.VisaType!=1'>自由职业</option>
+            <option value='4' v-if='detailInfo.VisaType!=4'>退休</option>
+            <option value='3' v-if='detailInfo.VisaType!=4'>学生（18岁及以上）</option>
+            <option value='2' v-if='detailInfo.VisaType!=4'>学生（18岁以下）</option>
+            <option value='7' v-if='detailInfo.VisaType!=4'>学龄前儿童</option>
+        </select>
         <select v-model='certificateInfo.Identity' v-else>
           <option value='1'>自雇</option>
           <option value='6'>受雇</option>
@@ -158,7 +168,7 @@
 import Preview from './Preview.vue'
 import DelectAll from './DelectAll.vue'
 import Identification from './Identification.vue'
-import PreviewENG from './PreviewENG.vue'
+// import PreviewENG from './PreviewENG.vue'
 import PreviewENG2 from './PreviewENG2.vue'
 
 
@@ -399,7 +409,6 @@ export default {
     'Preview': Preview,
     "Identification":Identification,
     "DelectAll":DelectAll,
-    "PreviewENG":PreviewENG,
     "PreviewENG2":PreviewENG2
   },
   destroyed(){

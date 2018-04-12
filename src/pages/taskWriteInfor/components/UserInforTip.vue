@@ -25,13 +25,23 @@
 			</div>
 			<div>
 				<label>职业：</label>
-				<select v-model='detailInfo.Identity' v-if="detailInfo.Identity=='法国'||detailInfo.Identity=='奥地利'||detailInfo.Identity=='葡萄牙'||detailInfo.Identity=='意大利'||detailInfo.Identity=='美国'||detailInfo.Identity=='英国'">
+				<select v-model='detailInfo.Identity' v-if="detailInfo.Country=='法国'||detailInfo.Country=='奥地利'||detailInfo.Country=='葡萄牙'||detailInfo.Country=='意大利'||detailInfo.Country=='美国'||detailInfo.Country=='英国'">
 			        <option value='1'>自雇</option>
 			        <option value='6'>受雇</option>
 			        <option value='5' v-if='detailInfo.VisaType!=4'>自由职业</option>
 			        <option value='4' v-if='detailInfo.VisaType!=4'>退休</option>
 			        <option value='3'>学生（18岁及以上）</option>
 			        <option value='2'>学生（18岁以下）</option>
+			        <option value='7' v-if='detailInfo.VisaType!=4'>学龄前儿童</option>
+				</select>
+				<select v-model='detailInfo.Identity' v-else-if="detailInfo.Country=='挪威'&&$root.get('isGroupVisa') == 'false'">
+			        <option value='1'>自雇</option>
+			        <option value='6'>受雇</option>
+					<!-- 挪威 只有探亲才可以有自由职业 -->
+			        <option value='5' v-if='detailInfo.VisaType!=4&&detailInfo.VisaType!=1'>自由职业</option>
+			        <option value='4' v-if='detailInfo.VisaType!=4'>退休</option>
+			        <option value='3' v-if='detailInfo.VisaType!=4'>学生（18岁及以上）</option>
+			        <option value='2' v-if='detailInfo.VisaType!=4'>学生（18岁以下）</option>
 			        <option value='7' v-if='detailInfo.VisaType!=4'>学龄前儿童</option>
 				</select>
 				<select v-model='detailInfo.Identity' v-else>

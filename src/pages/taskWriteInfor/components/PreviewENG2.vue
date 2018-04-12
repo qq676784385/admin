@@ -265,7 +265,7 @@ export default {
     },
     getFileTemplate() {
       // 获取模板信息
-      console.log("获取模板信息", this.previewInfo[this.showImgIndex].Tag)
+      // console.log("获取模板信息", this.previewInfo[this.showImgIndex].Tag)
       this.$http.get(this.$store.state.app.host + "api/Manage/GetFileTemplate", {
           params: {
             userVisaId: this.$store.state.app.ivisaId,
@@ -287,7 +287,7 @@ export default {
             }
           },
           function(err) {
-            console.log("出错了")
+            // console.log("出错了")
           }
         )
     },
@@ -304,7 +304,7 @@ export default {
         return
       }
 
-      console.log("?????", this.previewInfo[this.showImgIndex].TemplateData.IsCustomTemplate)
+      // console.log("?????", this.previewInfo[this.showImgIndex].TemplateData.IsCustomTemplate)
       // 每次重新选择模板都要先翻译保存
       if (this.previewInfo[this.showImgIndex].TemplateData.IsCustomTemplate == true) {
         // 自定义模板
@@ -360,7 +360,7 @@ export default {
       }
 
 
-      console.log("保存所选模板", this.selectTempInfo, this.showImgIndex, this.templateId);
+      // console.log("保存所选模板", this.selectTempInfo, this.showImgIndex, this.templateId);
       // if(this.templateId == -1){
       //   this.previewInfo[this.showImgIndex].TemplateId = -1
       //   this.previewInfo[this.showImgIndex].TemplateData = []
@@ -387,14 +387,14 @@ export default {
         this.createTemp = false
         this.creatempText = ""
       }
-      console.log("??", this.previewInfo[this.showImgIndex])
+      // console.log("??", this.previewInfo[this.showImgIndex])
       var that = this
       setTimeout(function() {
         that.dateDestory()
         if ($(".allInfo").children().eq(1).children().length > 0) {
 
           var mubanDom = $(".allInfo").children()
-          console.log(mubanDom);
+          // console.log(mubanDom);
           for (var i = 0; i < that.previewInfo[that.showImgIndex].TemplateData.TemplateFieldInfo.length; i++) {
             for (var j = 1; j < mubanDom.length; j++) {
               if ($(mubanDom[j]).children().children().eq(1).attr("tag") == that.previewInfo[that.showImgIndex].TemplateData.TemplateFieldInfo[i].Tag) {
@@ -692,7 +692,7 @@ export default {
             }
           },
           function(err) {
-            console.log("出错了");
+            // console.log("出错了");
           }
 
         )

@@ -315,7 +315,10 @@ export default {
     },
     selectChange(el, parentEl, dataObj, selectValue) {
       if (dataObj.Options && !isNaN(dataObj.Options[dataObj.Options.length - 1].Value) && dataObj.Options[dataObj.Options.length - 1].Value == dataObj.Options[dataObj.Options.length - 1].ValueENG) {
-        this.moreSelectChange(el, parentEl, dataObj, selectValue)
+          if($(el)[0].selectedIndex>0&&dataObj.Children.length>0){
+              this.moreSelectChange(el, parentEl, dataObj, selectValue)
+          }
+
       } else if (dataObj.FieldType == 2) {
         if (selectValue == "中国") {
           var that = this
